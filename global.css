@@ -1,0 +1,10 @@
+body {
+    background-color: slategrey;
+}
+h1 {
+    color: darkcyan;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
