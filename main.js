@@ -3,17 +3,17 @@ function distantion(x1, y1, x2, y2) {
   }
   console.log(distantion);
 
-//   const deposit = 12000;
-//   const rate = 0.07;
-//   const years = 24;
-//   const houseCost = 16500
+  const deposit = 12000;
+  const rate = 0.07;
+  const years = 24;
+  const houseCost = 16500
 
-//   const res = deposit * (1 + rate / 12) ** 24;
-//   if (res > houseCost) {
-//     console.log(`Можем купить. Остаток ${res - houseCost}`)
-//   } else {
-//     console.log('Нищеброд, пока иди похай')
-//   }
+  const res = deposit * (1 + rate / 12) ** 24;
+  if (res > houseCost) {
+    console.log(`Можем купить. Остаток ${res - houseCost}`)
+  } else {
+    console.log('Нищеброд, пока иди похай')
+  }
 
   const languages = ('ru' , 'en');
 
@@ -23,3 +23,16 @@ function distantion(x1, y1, x2, y2) {
     case languages == 'en':
         console.log('hello')
   }
+
+let balance = 1000;
+let bonusBalance = 100;
+let isBanned = false;
+let isExid = false;
+let isSelling = true;
+
+let canBay = (balance > 1000 || bonusBalance > 110) 
+    && !isBanned 
+    && !isExid 
+    && isSelling;
+
+console.log(`Могу купить игру: ${canBay ? 'да' : 'нет'}`);
